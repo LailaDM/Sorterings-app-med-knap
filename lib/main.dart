@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(home: MainPage()));
+  runApp(const MaterialApp(home: MainPage()));
 }
 
 class MainPage extends StatefulWidget {
+  const MainPage({super.key});
+
   @override
   State<MainPage> createState() => _MainPageState();
 }
