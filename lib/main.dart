@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -58,12 +57,10 @@ class _MainPageState extends State<MainPage> {
         final item = sortedItems[index];
 
         return ListTile(
+          // ignore: prefer_const_constructors
           leading: CircleAvatar(
             radius: 28,
             backgroundColor: Colors.purple,
-            //backgroundImage: NetworkImage(
-            //'https://source.unsplash.com/random?sig= $index',
-            //),
           ),
           title: Text(item),
           subtitle: Text('Subtitle $index'),
